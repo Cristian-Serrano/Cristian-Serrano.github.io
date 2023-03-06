@@ -1,0 +1,441 @@
+/**** Propiedades comunes ****/
+p {color: #333333;}
+
+a {
+    text-decoration: none;
+    color: #2a4b77;
+}
+
+/**** BODY ****/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* en el ancho incluye el borde , el padding y el relleno */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a.boton {
+    color: rgb(216, 55, 55);
+    font-size: larger;
+}
+
+/**** HEADER ****/
+header {
+    position: relative;
+    width: 100%;
+    height: 3em;
+}
+
+.enlace {
+    /*Para que el elemento iniciar_sesion no se ponga en frente del enlace del logo*/
+    z-index:1;
+}
+
+#iniciar_sesion {
+    color: #c2d2d2;
+    position: absolute;
+    top: 1em;
+    left: 8em;
+    z-index:0;
+}
+
+#iniciar_sesion a {
+    color: #879ad3;
+}
+
+#iniciar_sesion a:hover {
+    color: #c8d6ff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+    /**** NAVEGACION ****/
+nav{
+    background-color:#322d24;
+    height: 3em;
+    width: 100%; 
+}
+.enlace{
+    position: absolute;
+    top:0.5em;
+    bottom: 0.5em;
+    left: 3em;
+    height: 2em;
+}
+
+.logo{
+    height: 2em;
+}
+
+nav ul{
+    float: right;
+    margin-right: 4.8em;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 3em;
+    text-align: center;
+    color:#c2c2c2;
+    cursor: pointer;
+}
+
+nav ul a {
+    color:inherit;
+    font-size:1em;
+    padding:0.5em;
+    text-transform:uppercase;
+}
+
+a.active{
+    background: #2a4b77;
+    color: #c2c2c2;
+    border-radius: 3px;
+}
+
+nav ul li:hover {
+    background:#6d7c71;
+    color:#b8ffb5;
+}
+
+nav ul li:hover > a.active{
+    background:none;
+    color:#b8ffb5;
+}
+
+    /* menu desplegable */
+    nav ul ul{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        padding:0;
+    }
+    #desplegable {
+        position: relative;
+    }
+
+    #desplegable:hover ul{
+        background-color:#322d24;
+        display:block;
+    }
+
+    nav ul ul li {
+        width:8em;
+        color:#c2c2c2;
+    }
+
+    nav ul ul a {
+        color:inherit;
+    }
+
+    nav ul ul li:hover{
+        color:#b8ffb5;
+    }
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 0;
+    margin-top: 0.35em;
+    margin-right: 0.5em;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:952px){
+
+    .enlace{
+        left: 1em;
+    }
+
+    nav ul{
+        margin-right: 3.5em;
+    }
+
+    nav ul li a{
+        font-size: 0.7em;
+        transition: 0s;
+        letter-spacing:0.1em;
+        font-weight: bold;
+    }
+
+    nav li{
+        height: 3em;
+    }
+
+    nav ul ul li {
+        width: 6em;
+    }
+}
+
+@media (max-width: 858px){
+
+    #iniciar_sesion {
+        top: 1.7em;
+        left:10%;
+        padding-left: 50px;
+        font-size: 0.7em;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background:#afdcff;
+        top: 3em;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        line-height: 3em;
+        color: #243142;
+    }
+
+    nav ul li a{
+        transition: 0s;
+    }
+
+    nav ul li:hover{
+        background: #40515f;
+        color: #fff;
+    }
+
+    nav ul li:hover > a.active{
+        background: none;
+        color: #fff;
+    }
+
+    nav ul li a{
+        font-size: 1em;
+        color: inherit;
+    }
+
+    #desplegable ul{
+        cursor: initial;
+    }
+
+    #desplegable:hover ul{
+        background-color:#afdcff;
+    }
+
+    nav ul ul li {
+        width: 100%;
+        color:#243142;
+    }
+
+    nav ul ul a {
+        color:inherit;
+    }
+
+    nav ul ul li:hover{
+        background:#40515f;
+        color: #fff;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+/**** ASIDE ****/
+
+
+/**** SECTION ****/
+
+/**** SECTION 1 ****/
+.imgPrincipal{
+    position: relative;
+    background: url(../imagenes/tanqueprincipal.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 3em);
+}
+
+.imgPrincipal p {
+    position: absolute;
+    top: 2em;
+    left: 45%;
+    width: 10em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#descargar1 {
+    top: 4em;
+}
+
+#descargar1:hover a{
+    background-color: #f51606;
+    color:#fefffe;
+    border-radius: 3px;
+}
+
+
+/**** SECTION 2 ****/
+
+#section2 {
+    background: #2e2e39;
+    height: 800px;
+}
+
+h1 {
+    position: relative;
+    top: 2%;
+    left: 45%;
+
+    font-size: 3em;
+    color: #d8cfc8;
+}
+
+.tipos {
+    position: relative;
+    background: #b4a989;
+    width: 40%;
+    height: 25%;
+    margin: 5%;
+
+}
+
+.tipos img{
+    height: 100%;
+    float: left; 
+}
+
+#tipo1 {
+
+}
+
+#tipo2 {
+    left: 50%;
+    bottom: 36.5%;
+}
+
+#tipo3 {
+    bottom: 36.5%;
+}
+
+#tipo4 {
+    left: 50%;
+    bottom: 73%;
+}
+
+.tipos p {
+    padding: 1em;
+    margin-left: 30%;
+}
+
+p.nombreTanque {
+    font-size: 2em;
+}
+
+p.descripcionTanque {
+    font-size: 1em;
+}
+/**** SECTION 3 ****/
+
+h2 {
+    color:rgb(153, 153, 153)
+}
+
+    /***** TABLA *****/
+    /* TABLA */
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-family: Arial;
+    }
+
+    /* CELDAS */
+    td ,th{
+        padding: 0.5em;
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    td {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    table tbody :hover{
+        background-color: #fefffe;
+    }
+
+    thead th {
+        background-color: rgb(153, 153, 153);
+        color:rgb(255, 255, 255)
+    }
+
+    tbody th {
+        background-color: aquamarine;
+        text-align: left;
+    }
+
+    tr {
+        background-color: #b8ffb5;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #8bff87;
+    }
+/**** SECTION 4 ****/
+#section4 {
+    position:relative;
+    height: 6em;
+}
+
+#section4 p {
+    position: absolute;
+    left: 45%;
+    width: 12em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#unete {
+    top:2em;
+}
+
+#descargar2 {
+    top:4em;
+}
+
+#descargar2:hover a{
+    background-color: #f51606;
+    color:#fefffe;
+    border-radius: 3px;
+}
+/**** FOOTER ****/
+#sectionRRSS {
+    text-align: right;
+    padding-right: 1.5em;
+}
+
+footer section img{
+    width: 2.3em;
+}
+footer nav {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav ul {
+    padding: 0em;
+}
+
+footer nav li {
+    display: inline-block;
+    font-size: 0.9em;
+}
