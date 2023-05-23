@@ -1,0 +1,80 @@
+/**** GENERAL ****/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(71, 71, 71);
+}
+/*** SECTION ***/
+
+section{
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    margin-top: 180px;
+    border-radius: 5px;
+    border: 2px solid #85a9c7;
+    box-shadow: 10px 15px 45px #2b2b2b;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    background: url(../imagenes/fondoTanque.jpg)  no-repeat;
+    color: white;
+}
+
+section img{
+    margin-top: 10px;
+}
+
+section h4{
+    margin: 0 40px;
+    margin-top: 30px;
+    height: 80px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 43px;
+}
+
+section p{
+    height: 40px;
+}
+
+section a{
+    color: #85a9c7;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+/*** FORM ***/
+
+form{
+    width: 100%;
+    margin: auto;
+}
+
+form #usuario,#password{
+    width: 80%;
+    height: 30px;
+    margin: 10px 40px;
+    border-radius: 5px;
+    border: 2px solid #85a9c7;
+    padding: 1px 10px;
+    font-weight: bold;
+}
+
+#usuario:focus, #password:focus{
+    border: 1px solid #000;
+    outline: solid 3px rgb(255, 255, 255);
+    outline-offset: 1px;
+}
+
+#enviar{
+    width: 80%;
+    height: 30px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    border: 0px;
+}

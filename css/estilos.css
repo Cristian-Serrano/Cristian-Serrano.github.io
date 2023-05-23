@@ -1,0 +1,295 @@
+/**** Propiedades comunes ****/
+p {color: #333333;}
+
+a {
+    text-decoration: none;
+    color: #2a4b77;
+}
+
+/**** BODY ****/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* en el ancho incluye el borde , el padding y el relleno */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**** ASIDE ****/
+
+/**** SECTION ****/
+section{
+    z-index: 0;
+}
+/**** sectionImgPrincipal ****/
+.sectionImgPrincipal{
+    position: relative;
+    background: url(../imagenes/tanqueprincipal.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 3em);
+}
+
+.sectionImgPrincipal p {
+    position: absolute;
+    top: 2em;
+    left: calc(50% - 80px);
+    width: 10em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#boton1 {
+    position:absolute;
+    left: calc(50% - 85px);
+    top: 15%;
+    background-color: #fefffe;
+    border-radius: 6px;
+    color: rgb(216, 55, 55);
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#boton1:hover{
+    background-color: #f51606;
+    color:#fefffe;
+    
+}
+
+/**** SECTION TIPOS ****/
+
+#sectionTipos {
+    position: relative;
+    background: #2e2e39;
+    height: 1000px;
+}
+
+h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: calc(50% - 75px);
+    font-size: 3em;
+    color: #d8cfc8;
+}
+
+.tipos{
+    width: 35%;
+    height: 300px;
+    background-color: #a3786b;
+}
+
+#tipo1{
+    position: absolute;
+    left: 10%;
+}
+
+#tipo2{
+    position: absolute;
+    right: 10%;
+}
+
+#tipo3{
+    position: absolute;
+    left: 10%;
+    margin-top: 400px;
+}
+
+#tipo4{
+    position: absolute;
+    right: 10%;
+    margin-top: 400px;
+}
+
+.tipos img{
+    height: 100%;
+}
+
+.tipos p {
+    width: calc(97% - 334px);
+    margin: 0px;
+    position:absolute;
+    top: 100px;
+    right: 0px;
+}
+
+.tipos h3 {
+    color: #c2d2d2;
+    font-size: 2em;
+    width: calc(97% - 334px);
+    margin: 0px;
+    position:absolute;
+    top: 10px;
+    right: 0px;
+}
+
+@media (max-width: 1750px){
+    .tipos{
+        height: 200px;
+    }
+
+    .tipos p {
+        width: calc(97% - 223px);
+    }
+    
+    .tipos h3 {
+        width: calc(97% - 223px);
+}
+}
+
+@media (max-width: 1175px){
+    #sectionTipos {
+        height: 1150px;
+    }
+
+    .tipos{
+        height: 400px;
+        width: 300px;
+    }
+
+    #tipo3, #tipo4{
+        margin-top: 500px;
+    }
+
+    .tipos img{
+        height: auto;
+        width: 100%;
+    }
+
+    .tipos p {
+        width: 97%;
+        top: 350px;
+    }
+    
+    .tipos h3 {
+        width: 97%;
+        top: 280px;
+    }  
+}
+
+@media (max-width: 850px){
+    #sectionTipos {
+        height: 2150px;
+    }
+
+    #tipo1{
+        position: absolute;
+        left: calc(50% - 150px);
+    }
+    
+    #tipo2{
+        position: absolute;
+        left: calc(50% - 150px);
+        margin-top: 500px;
+    }
+    
+    #tipo3{
+        position: absolute;
+        left: calc(50% - 150px);
+        margin-top: 1000px;
+    }
+    
+    #tipo4{
+        position: absolute;
+        left: calc(50% - 150px);
+        margin-top: 1500px;
+    }
+}
+
+p.nombreTanque {
+    font-size: 2em;
+}
+
+p.descripcionTanque {
+    font-size: 1em;
+}
+/**** SECTION TABLA ****/
+
+h2 {
+    margin-left: 40%;
+    padding: 20px;
+    color:rgb(153, 153, 153)
+}
+
+    /***** TABLA *****/
+    /* TABLA */
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-family: Arial;
+        margin: 0px 10%;
+        width: 80%;
+    }
+
+    /* CELDAS */
+    td ,th{
+        padding: 0.5em;
+        border: 1px solid black;
+        text-align: center;
+        height: 50px;
+    }
+
+    td {
+        font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+        width: 600px;
+    }
+
+    td+td {
+        width: 400px;
+    }
+
+    table tbody :hover{
+        background-color: #fefffe;
+    }
+
+    thead th {
+        background-color: rgb(153, 153, 153);
+        color:rgb(255, 255, 255)
+    }
+
+    tbody th {
+        background-color: aquamarine;
+        text-align: left;
+        width: 300px;
+    }
+
+    tr {
+        background-color: #b8ffb5;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #8bff87;
+    }
+/**** SECTION 4 ****/
+#section4 {
+    position:relative;
+    height: 200px;
+}
+
+#section4 p {
+    position: absolute;
+    left: calc(50% - 95px);
+    top:2em;
+    width: 12em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#boton2 {
+    position:absolute;
+    left: calc(50% - 85px);
+    bottom: 15%;
+    background-color: #fefffe;
+    border-radius: 6px;
+    color: rgb(216, 55, 55);
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#boton2:hover{
+    background-color: #f51606;
+    color:#fefffe;
+    
+}

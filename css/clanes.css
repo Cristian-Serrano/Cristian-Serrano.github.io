@@ -1,0 +1,97 @@
+/*La altura de la pagina es siempre igual al tamaño de la ventana*/
+
+/**** CARACTERISTICAS COMUNES ****/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* en el ancho incluye el borde , el padding y el relleno */
+    font-family: Arial, Helvetica, sans-serif;
+}
+/**** BODY ****/
+
+body{
+    background-attachment: fixed;
+    background: #fff url(../imagenes/fondoClan.jpg) 70% center;
+    background-repeat: no-repeat;
+}
+
+/**** MAIN ****/
+
+main{
+    padding: 2% 0;
+    height: calc(100vh - 48px - 132px);
+}
+
+@media (max-width: 858px){
+    main{
+        height: calc(100vh - 48px - 84px);
+    }
+}
+
+main section {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+main section h1 {
+    font-size: 4em;
+    color: #fff;
+    margin-bottom: 2%;
+}
+
+main section p{
+    color: #fff;
+    margin-bottom: 1%;
+}
+
+#p2 {
+    margin-bottom: 7%;
+}
+
+#a1{
+    padding: 1em 2em;
+    color: #fff;
+    font-weight: 800;
+    background: rgb(242,151,13);
+    background: linear-gradient(180deg, rgba(242,151,13,1) 0%, rgba(177,46,4,1) 64%);
+}
+
+#a2{
+    margin-left: 2%;
+    color: #1d77b3;
+    text-decoration: underline;
+}
+
+#a3{
+    margin-left: 2%;
+    color: #1d77b3;
+    text-decoration: underline;
+    position: absolute;
+    bottom: -50px;
+    display: none;
+}
+
+@media (max-width: 500px){
+    #a2{
+        display: none;
+    }
+    #a3{
+        display: block;
+    }
+}
+
+#a1:hover{
+    background: linear-gradient(180deg, rgb(231, 193, 136) 0%, rgb(172, 115, 96) 64%);
+}
+
+#a2:hover{
+    text-decoration: none;
+}
+
+#a3:hover{
+    text-decoration: none;
+}
