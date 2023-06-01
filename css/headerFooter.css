@@ -16,7 +16,7 @@ a {
 
 /**** HEADER ****/
 header {
-    --height: 3em;
+    --height: 3em; /*es una variable*/
     position: relative;
     width: 100%;
     height: var(--height);
@@ -47,7 +47,8 @@ header {
 
 
     /**** NAVEGACION ****/
-nav{
+header nav, footer nav{
+    /* background-color: #c49133; */
     background-color: #322d24;
     height: 3em;
     width: 100%; 
@@ -64,13 +65,13 @@ nav{
     height: 2em;
 }
 
-nav ul{
+header nav ul, footer nav ul{
     z-index: 1;
     float: right;
     margin-right: 4.8em;
 }
 
-nav ul li{
+header nav ul li, footer nav ul li{
     display: inline-block;
     line-height: 3em;
     text-align: center;
@@ -78,7 +79,7 @@ nav ul li{
     cursor: pointer;
 }
 
-nav ul a {
+header nav ul a, footer nav ul a{
     color:inherit;
     font-size:1em;
     padding:0.5em;
@@ -92,18 +93,18 @@ a.active{
     border-radius: 3px;
 }
 
-nav ul li:hover {
+header nav ul li:hover,footer nav ul li:hover {
     background:#6d7c71;
     color:#b8ffb5;
 }
 
-nav ul li:hover > a.active{
+header nav ul li:hover > a.active,footer nav ul li:hover > a.active{
     background:none;
     color:#b8ffb5;
 }
 
     /* menu desplegable */
-    nav ul ul{
+    header nav ul ul{
         display:none;
         position:absolute;
         top:100%;
@@ -119,16 +120,16 @@ nav ul li:hover > a.active{
         display:block;
     }
 
-    nav ul ul li {
+    header nav ul ul li {
         width:8em;
         color:#c2c2c2;
     }
 
-    nav ul ul a {
+    header nav ul ul a {
         color:inherit;
     }
 
-    nav ul ul li:hover{
+    header nav ul ul li:hover{
         color:#b8ffb5;
     }
 
@@ -154,22 +155,22 @@ nav ul li:hover > a.active{
         left: 1em;
     }
 
-    nav ul{
+    header nav ul,footer nav ul{
         margin-right: 3.5em;
     }
 
-    nav ul li a{
+    header nav ul li a,footer nav ul li a{
         font-size: 0.7em;
         transition: 0s;
         letter-spacing:0.1em;
         font-weight: bold;
     }
 
-    nav li{
+    header nav li, footer nav li{
         height: 3em;
     }
 
-    nav ul ul li {
+    header nav ul ul li{
         width: 6em;
     }
 }
@@ -187,7 +188,7 @@ nav ul li:hover > a.active{
     .checkbtn{
         display: block;
     }
-    ul{
+    header ul,footer ul{
         position:fixed;
         width: 100%;
         height: calc(100vh - 48px);
@@ -198,27 +199,27 @@ nav ul li:hover > a.active{
         transition: all .5s;
     }
 
-    nav ul li{
+    header nav ul li,footer nav ul li{
         display: block;
         line-height: 3em;
         color: #243142;
     }
 
-    nav ul li a{
+    header nav ul li a,footer nav ul li a{
         transition: 0s;
     }
 
-    nav ul li:hover{
+    header nav ul li:hover,footer nav ul li:hover{
         background: #40515f;
         color: #fff;
     }
 
-    nav ul li:hover > a.active{
+    header nav ul li:hover > a.active,footer nav ul li:hover > a.active{
         background: none;
         color: #fff;
     }
 
-    nav ul li a{
+    header nav ul li a,footer nav ul li a{
         font-size: 1em;
         color: inherit;
     }
@@ -231,16 +232,16 @@ nav ul li:hover > a.active{
         background-color:#afdcff;
     }
 
-    nav ul ul li {
+    header nav ul ul li{
         width: 100%;
         color:#243142;
     }
 
-    nav ul ul a {
+    header nav ul ul a {
         color:inherit;
     }
 
-    nav ul ul li:hover{
+    header nav ul ul li:hover{
         background:#40515f;
         color: #fff;
     }
