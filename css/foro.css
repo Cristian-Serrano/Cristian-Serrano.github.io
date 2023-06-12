@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/** MAIN **/
+main{
+    padding: 2% 10%;
+}
+    /** H1 **/
+    main h1{
+        font-size: 2em;
+        padding-bottom: 20px;
+    }
+
+    /** H3 **/
+    h3{
+        padding: 10px;
+        background-color: #464646;
+        color: white;
+    }
+    /** SECTION **/
+    main #sectionContenedora{
+        border-top: 10px #cfa88d solid;
+        border-bottom: 5px #cfa88d solid;
+        background-color: #d17f48;
+        padding: 10px;
+    }
+
+    main #sectionContenedora section{
+        position: relative;
+        padding: 10px;
+        border-bottom: 1px black solid;
+    }
+
+    main #sectionContenedora #section5{
+        border-bottom: 0px;
+    }
+
+    main #sectionContenedora section img{
+        height: 45px;
+    }
+
+    main #sectionContenedora section a{
+        position: absolute;
+        left: 70px;
+        top: 20px;
+        font-size: 1.3em;
+    }
+
+    main #sectionContenedora section a:hover{
+        cursor: pointer;
+    }
+
+    main #sectionContenedora section p{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
